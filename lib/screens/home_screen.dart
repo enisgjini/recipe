@@ -11,47 +11,6 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Recipe App'),
         backgroundColor: Colors.green,
-        actions: [
-          IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () => showSearch(
-                context: context,
-                delegate: SearchPage<Recipe>(
-                  searchLabel: 'Kërko recetën',
-                  suggestion: Center(
-                    child: Container(
-      
-                      height: 400,
-                      width: 350,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                        image: AssetImage('assets/recipe.jpg'),
-                        fit: BoxFit.fill,
-                      )),
-                    ),
-                  ),
-                  builder: (recipes) => ListTile(
-                    title: Text(recipes.title),
-                    onTap: (){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => HomeScreen(
-                          ),),);
-                    },
-                  ),
-                  filter: (recipes) => [
-                    recipes.title,
-                  ],
-                  items: recipes,
-                  failure: Center(
-                    child: Container(
-                      child: Text('Nuk u gjet asnjë të dhënë'),
-                    ),
-                  ),
-                )),
-          ),
-        ],
       ),
       body: Container(
         child: ListView.builder(
