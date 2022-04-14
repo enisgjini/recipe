@@ -31,6 +31,7 @@ class DetailScreen extends StatelessWidget {
           headerSliverBuilder: (context, isScrollable) {
             return <Widget>[
               SliverAppBar(
+                backgroundColor: Colors.green,
                 expandedHeight: 200,
                 titleSpacing: 2.0,
                 centerTitle: true,
@@ -38,9 +39,19 @@ class DetailScreen extends StatelessWidget {
                 floating: true,
                 flexibleSpace: FlexibleSpaceBar(
                   centerTitle: true,
-                  title: Text(
-                    title,
-                    style: TextStyle(fontSize: 15, color: Colors.white),
+                  title: Container(
+                    padding: EdgeInsets.symmetric(
+                      vertical: 5,
+                      horizontal: 15,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(5)
+                    ),
+                    child: Text(
+                      title,
+                      style: TextStyle(fontSize: 15, color: Colors.white),
+                    ),
                   ),
                   background: Image.network(
                     imgUrl,
@@ -53,7 +64,6 @@ class DetailScreen extends StatelessWidget {
           body: Column(
             children: [
               Padding(
-                
                 padding: EdgeInsets.fromLTRB(15, 15, 0, 0),
                 child: Container(
                   child: Column(
@@ -107,7 +117,7 @@ class DetailScreen extends StatelessWidget {
               Expanded(
                 child: _buildContainer(Text(
                   steps,
-                  style: TextStyle(fontSize: 20, color: Colors.white),
+                  style: TextStyle(fontSize: 16, color: Colors.white),
                 )),
               ),
             ],

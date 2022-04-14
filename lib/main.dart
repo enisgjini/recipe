@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home:AnimatedSplashScreen(
-          splash: 'assets/recipe.jpg',
+          splash: 'assets/recipe.png',
           splashIconSize: 300,
           curve: Curves.easeInBack,
           duration: 2000,

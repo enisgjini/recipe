@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_simple_recipe_app/dummy_data.dart';
-import 'package:flutter_simple_recipe_app/modal/recipe.dart';
 import 'package:flutter_simple_recipe_app/screens/detail_screen.dart';
-import 'package:search_page/search_page.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
