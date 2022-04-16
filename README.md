@@ -7,8 +7,14 @@ Ne nje koh afat-shkurtë mund te behet shtimi i panelit te administratorit ne nj
 This application serves for the most detailed story about food recipes, which has been developed for my self-taught work.
 In the short term you can add the admin panel to a connection with Firebase. [ EN ]
 
+## Screenshots
+Splash Screen            |  Home Screen
+:-------------------------:|:-------------------------:
+![](https://i.ibb.co/pyxbb1j/photo-2022-04-16-02-21-34.jpg)  |  ![](https://i.ibb.co/TT3vRh1/photo-2022-04-16-02-21-20.jpg)
 
-
+Detail Screen           |  Empty
+:-------------------------:|:-------------------------:
+![](https://i.ibb.co/TT3vRh1/photo-2022-04-16-02-21-20.jpg)  |  
 
 ## Installation
 
